@@ -1,7 +1,10 @@
-let x = prompt("plese enter number")
-let y = +x
-console.log(y)
-if (isNaN(y)==false){
-  if(y%2==0){console.log("четное")}
+let x = +prompt("plese enter number")
+console.log(x)
+if (!isNaN(x)){
+  if(x%2==0){console.log("четное")}
     else {console.log("не четное")}
-}else {console.log("Упс, кажется, вы ошиблись")}
+} else {console.log("Упс, кажется, вы ошиблись")}
+
+// Задание выполнено верно, но условие проверки можно немного упростить :) Функция isNaN и так возвращает логическое значение (true/false), поэтому сравнение с false (==false) лишнее. Для отрицания можно использовать логическое НЕ, т.е. знак ! 
+// Также унарный плюс можно использовать сразу на выражении prompt и не использовать лишнюю переменную y
+// Выше в коде исправила

@@ -1,13 +1,12 @@
 let a = prompt('please')
+a=+a
 let b = prompt('please')
-let interval = (b-a+1)*1000 
-let intervalID = window.setInterval(getNumbers,1000,a++)
-
-setTimeout(function(){
-  clearInterval(intervalID)
-},interval)
+b=+b
+let intervalID = window.setInterval(getNumbers,1000,a)
 
 function getNumbers (a){
-  a=+a
   console.log(a)
+  if (a==b){
+    clearInterval(intervalID)}
+  a = a + 1
 }

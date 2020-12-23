@@ -2,8 +2,9 @@ let a = prompt('please')
 a=+a
 let b = prompt('please')
 b=+b
-let intervalID = window.setInterval(getNumbers,1000)
-function getNumbers (){
+let intervalID = window.setInterval(getNumbers,1000,a)
+
+function getNumbers (a){
   console.log(a)
   if (a==b){
     clearInterval(intervalID)}

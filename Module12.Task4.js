@@ -63,9 +63,3 @@ function TurnOn (nameThing){
 
 TurnOn(nameThing)
 
-
-
-
-
-
-

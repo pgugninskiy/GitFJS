@@ -6,10 +6,7 @@
 Функция должна возвращать true или false. */
 
 function checkNameObj(str,obj){
-  let arr = Object.keys(obj)
-    if (arr.includes(str) == true){
-      console.log("true")
-    } else {console.log("false")}
+  console.log(str in obj)
 }
 
 const obj = {
@@ -21,3 +18,5 @@ const obj = {
 let str = prompt("enter property")
 
 checkNameObj(str,obj)
+
+// Задание выполнено верно, но есть более простой способ решить задачу: использовать оператор in. Он проверяет, содержит ли объект свойство с указанным ключом или нет и возвращает значения true или false

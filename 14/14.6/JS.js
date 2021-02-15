@@ -9,7 +9,7 @@ let str = 'https://jsonplaceholder.typicode.com/users/...';
 btn.addEventListener('click', () => { checkID() });
 
 // функция для проверки ИД пользователя
-function checkID () {
+checkID = () => {
   // выполняем запрос к списку пользовательских ИД
   fetch(str.replace('...',``))
   .then((response) => { return response.json(); })
@@ -28,9 +28,8 @@ function checkID () {
                   })
   .catch(() => { console.log('error') });
 };
-
 // функция для получения списка задач пользователя
-function getToDo () {
+getToDo = () => {
     fetch(str.replace('...',`${idUser.value}/todos`))
     
       .then((response) => {
@@ -50,7 +49,7 @@ function getToDo () {
       .catch(() => { console.log('error')})  ;
 };
 // функция для вставки тэгов на страницу
-function insertToDo () {
+insertToDo = () => {
   for (let i in dataJSON) {
           div.insertAdjacentHTML('beforeend', `<ul>`);
           div.insertAdjacentHTML('beforeend', `<li>"userId":${dataJSON[i].userId}</li>`);
@@ -63,4 +62,3 @@ function insertToDo () {
           div.insertAdjacentHTML('beforeend', `</ul>`);
         }
 };
-

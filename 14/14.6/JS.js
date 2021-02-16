@@ -6,11 +6,16 @@ let dataId = [];
 let str = 'https://jsonplaceholder.typicode.com/users/...';
 
 // обработчик для кнопки
-btn.addEventListener('click', () => { checkID() });
+btn.addEventListener('click', () => { 
+  div.innerHTML = ""
+  checkID() 
+});
 
 // функция для проверки ИД пользователя
 checkID = () => {
+  
   // выполняем запрос к списку пользовательских ИД
+  
   fetch(str.replace('...',``))
   .then((response) => { return response.json(); })
   .then((data) => { 

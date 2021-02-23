@@ -29,7 +29,9 @@ checkID = () => {
          getToDo ()  
                                         } 
     // если всё не ОК, то выводим соответствующее сообщение
-    else {div.insertAdjacentHTML('beforeend', `<ol>"Пользователь с указанным id не найден" <ol>`) }             
+    else {
+      div.innerHTML = '';
+      div.insertAdjacentHTML('beforeend', `<ol>"Пользователь с указанным id не найден" <ol>`) }             
                   })
   .catch(() => { console.log('error') });
 };

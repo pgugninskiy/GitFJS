@@ -1,0 +1,35 @@
+.btn {
+    display: flex;
+  margin: 45px 110px;
+  padding: 50px 155px;
+  border-radius: 11px;
+  font-size: 82px;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: black;
+  background: orange;
+  transition: 0.3s;
+}
+
+.par {
+  margin: 10px 60px;
+  padding: 10px 55px;
+  font-weight: bold;
+  color: rgb(176, 36, 214);
+}
+
+.screenSize{
+  margin: 00px 50px;
+  padding: 00px 150px;
+  font-weight: bold;
+  color: rgb(227, 31, 14);
+
+}
+
+.divGeolocation {
+  margin: 00px 50px;
+  padding: 00px 150px;
+  font-weight: bold;
+  color: rgb(227, 31, 14);
+
+}

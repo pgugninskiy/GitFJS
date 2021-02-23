@@ -9,20 +9,17 @@ let arrData = [];
 //обработчик
 btn.addEventListener('click', () =>{
 	div.innerHTML = ""
-	//проверяем условие по введенному значению для страницы и лимиту
-	if (!(+strPage.value > 0 && +strPage.value < 10) || typeof +strPage.value != "number" ) {
-		pageOutOfRange ();
-	}
-	if (!(+limit.value > 0 && +limit.value < 10) || typeof +limit.value != "number" ) {
-		limitOutOfRange ();
-	}
-
-	 if (
-	 	 !(+strPage.value > 0 && +strPage.value < 10 && typeof +strPage.value == "number") && 
-	  	 !(+limit.value > 0 && +limit.value < 10 && typeof +limit.value == "number")
-	  	) { pageLimitOutOfRange ()
-	 }
-	  	 else { getPicture (); }
+	//проверяем заполнены ли корректно поля для ввода
+	if (!(+strPage.value > 0 && +strPage.value < 10 && typeof +strPage.value === "number") &&
+			(+limit.value > 0 && +limit.value < 10 && typeof +limit.value === "number")
+		) {pageOutOfRange ()}
+	else if (!(+limit.value > 0 && +limit.value < 10 && typeof +limit.value === "number")&&
+		(+strPage.value > 0 && +strPage.value < 10 && typeof +strPage.value === "number")
+		) {limitOutOfRange ()}
+	else if (!(+strPage.value > 0 && +strPage.value < 10 && typeof +strPage.value === "number") &&
+			!(+limit.value > 0 && +limit.value < 10 && typeof +limit.value === "number"))
+		  {pageLimitOutOfRange ()}
+	else {getPicture ()}
 
 	}
 );

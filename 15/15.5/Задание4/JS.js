@@ -13,12 +13,14 @@ btn.addEventListener("click", () => {
 	if (!navigator.geolocation) { } 
 	//если данные есть то, получаем широту и долготу 
 	else {
+
 	navigator.geolocation.getCurrentPosition(success, error);
   }
  })
 //выполнение запроса для получения данных по локации и местному времени
 //и выводим эти данные на страницу
 function getTimeZoneAPI(latitude, longitude) {
+	console.log("ok")
     fetch(`https://api.ipgeolocation.io/timezone?apiKey=32bcd4a6e4b548968e7afcdb682ac679&lat=${latitude}&long=${longitude}`)
         .then((response) => { return response.json(); })
         .then((data) => { 

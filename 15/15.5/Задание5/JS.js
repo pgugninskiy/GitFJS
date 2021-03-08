@@ -44,7 +44,7 @@ btnGeo.addEventListener("click", () => {
 	 	
 })
 
-function success (position) {
+success = (position) => {
 	
 	latitude = position.coords.latitude;
 	longitude = position.coords.longitude;
@@ -55,7 +55,7 @@ function success (position) {
 		</div><br>`);
 							
 }
-function error () {
+error = () => {
   
   outPut.insertAdjacentHTML ('afterbegin',`<div class="output" style = "text-align: right;" >Данные гео-локации:  Location information is not available </div><br>`);
 }

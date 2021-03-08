@@ -9,13 +9,11 @@ let dataTimeZone ;
 //обработчик для кнопки
 btn.addEventListener("click", () => {
 	//проверяем данные по геолокации
-	//если данных нет то ничего не делаем
-	if (!navigator.geolocation) { } 
 	//если данные есть то, получаем широту и долготу 
-	else {
-
-	navigator.geolocation.getCurrentPosition(success, error);
-  }
+	
+	if (navigator.geolocation) {navigator.geolocation.getCurrentPosition(success, error); } 
+	
+	
  })
 //выполнение запроса для получения данных по локации и местному времени
 //и выводим эти данные на страницу

@@ -1,9 +1,10 @@
 //получаем переменные
-let timeZone = document.querySelector(".Timezone")
-let localDateTime = document.querySelector(".localDateTime")
+let screenSize = document.querySelector(".screenSize")
+let divGeolocation = document.querySelector(".divGeolocation")
 let btn = document.querySelector(".btn")
 
 btn.addEventListener("click", () => {
+	ScreenSize ()
 	if (!navigator.geolocation) {  } 
 		else {
     navigator.geolocation.getCurrentPosition(success, error);
@@ -11,14 +12,19 @@ btn.addEventListener("click", () => {
  })
 
 
-function success (position) {
-	localDateTime.innerHTML = '';
-	let latitude = position.coords.latitude;
-	let longitude = position.coords.longitude;
-	localDateTime.insertAdjacentHTML ('afterbegin',`latitude: ${latitude} , longitude: ${longitude} `);
+function ScreenSize () {
+	screenSize.innerHTML = '';
+	screenSize.insertAdjacentHTML ('afterbegin',`width: ${window.screen.width}, height: ${window.screen.height}   `);
 }
 
+function success (position) {
+	divGeolocation.innerHTML = '';
+	latitude = position.coords.latitude;
+	longitude = position.coords.longitude;
+	divGeolocation.insertAdjacentHTML ('afterbegin',`latitude: ${latitude}, longitude: ${longitude}   `);
+	
+}
 function error () {
-  localDateTime.innerHTML = '';
-  localDateTime.insertAdjacentHTML ('afterbegin','Location information is not available');
+  divGeolocation = '';
+  divGeolocation.insertAdjacentHTML ('afterbegin','Location information is not available');
 }

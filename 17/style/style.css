@@ -28,6 +28,10 @@
     justify-content: space-around;
 }
 
+a:hover {
+  background: rgb(232, 174, 174);
+}
+
 .btnEnter {
     display: inline-block;
     color: black;
@@ -38,14 +42,16 @@
     transition: 0.5s;
     padding: 20px;
     margin-top: 70px;
+    font-size: 20px;
+   
 }
 
 .btnEnter:hover {
-    background: grey;
+    background: gold;
 }
 
 .btnEnter:active {
-    background: gold;
+    background: rgb(13, 236, 252);
 }
 
 .abUsHead {

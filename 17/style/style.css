@@ -1,0 +1,235 @@
+.header {
+    display: flex;
+    flex-flow: row;
+
+    justify-content: space-around;
+}
+
+.logo {
+    padding-right: 30px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    overflow: hidden;
+}
+
+.abUs {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btnEnter {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.btnEnter:hover {
+    background: grey;
+}
+
+.btnEnter:active {
+    background: gold;
+}
+
+.abUsHead {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.abUsPar {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 147.3%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 200px;
+    margin-right: 200px;
+}
+
+.imgUs {
+    padding-top: 50px;
+}
+
+/*секция №2 контакты */
+
+.contactsBack {
+    background: #F7F9FB;
+    height: 341px;
+}
+
+.contacts {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertikal {
+    border-left: 4px solid;
+    height: 30px;
+    background: #C8C8CF;
+}
+
+.contHead {
+    /* H2 Desktop */
+    padding-top: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    text-align: center;
+}
+
+.sectionMail {
+    padding-right: 50px;
+}
+
+.headEMail {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 147.3%;
+
+    text-align: center;
+}
+
+.EMail {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 147.3%;
+
+    text-align: center;
+}
+
+.sectionPhone {
+    padding-left: 50px;
+}
+
+.headPhone {
+
+
+    /* Text S */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 147.3%;
+    /* identical to box height, or 21px */
+
+    text-align: center;
+}
+
+.phone {
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 147.3%;
+
+    text-align: center;
+}
+
+/* команда*/
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.headTeam {
+    padding-top: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.imgSign {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 147.3%;
+}
+
+.footer {
+    margin-top: 90px;
+    height: 124px;
+    left: 0px;
+    top: 2059px;
+    background: #3F3D56;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.social-icons {
+    text-align: right;
+    border-radius: 6px;
+}
+
+.social-icons li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.social-icons li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 18px;
+}

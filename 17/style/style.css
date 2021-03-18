@@ -1,14 +1,23 @@
+/* селектор определяющиq общие характеристики объектов*/
+.propertyText {
+    font-family: Roboto;
+    font-style: normal;
+
+}
+
+#positionText {
+    text-align: center;
+
+}
+/*селекторы определяющие уникальные характеристики объектов*/
 .header {
     display: flex;
     flex-flow: row;
-
     justify-content: space-around;
 }
 
 .logo {
     padding-right: 30px;
-    font-family: Rubik;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -28,9 +37,11 @@
     justify-content: space-around;
 }
 
-a:hover {
-  background: rgb(232, 174, 174);
+nav.abUs a:hover {
+    background: orange;
 }
+
+
 
 .btnEnter {
     display: inline-block;
@@ -43,7 +54,8 @@ a:hover {
     padding: 20px;
     margin-top: 70px;
     font-size: 20px;
-   
+    cursor:pointer;
+
 }
 
 .btnEnter:hover {
@@ -55,18 +67,11 @@ a:hover {
 }
 
 .abUsHead {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
     font-size: 64px;
     line-height: 120%;
-    text-align: center;
 }
 
 .abUsPar {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 147.3%;
     text-align: left;
@@ -77,6 +82,7 @@ a:hover {
 
 .imgUs {
     padding-top: 50px;
+    cursor:cell;
 }
 
 /*секция №2 контакты */
@@ -87,7 +93,6 @@ a:hover {
 }
 
 .contacts {
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,16 +106,10 @@ a:hover {
 }
 
 .contHead {
-    /* H2 Desktop */
     padding-top: 50px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 120%;
-    /* identical to box height, or 58px */
-
-    text-align: center;
 }
 
 .sectionMail {
@@ -118,25 +117,13 @@ a:hover {
 }
 
 .headEMail {
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 147.3%;
-
-    text-align: center;
 }
 
 .EMail {
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 147.3%;
-
-    text-align: center;
 }
 
 .sectionPhone {
@@ -144,30 +131,13 @@ a:hover {
 }
 
 .headPhone {
-
-
-    /* Text S */
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 147.3%;
-    /* identical to box height, or 21px */
-
-    text-align: center;
 }
 
 .phone {
-
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 147.3%;
-
-    text-align: center;
 }
 
 /* команда*/
@@ -181,22 +151,17 @@ a:hover {
 
 .headTeam {
     padding-top: 50px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 120%;
-    text-align: center;
-  border-radius: 58px;
+    border-radius: 58px;
 }
 
 .imgSign {
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 147.3%;
+    cursor:cell;
 }
 
 .footer {
@@ -205,7 +170,6 @@ a:hover {
     left: 0px;
     top: 2059px;
     background: #3F3D56;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -213,30 +177,31 @@ a:hover {
 }
 
 .copyright {
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
     color: #FFFFFF;
     padding-left: 50px;
 }
 
 .social-icons {
-    text-align: right;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 
 .social-icons li {
     display: inline-block;
-    padding-right: 50px;
+    padding: 10px;
 }
 
 .social-icons li img {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
+    
     border-radius: 18px;
 }
+
+ul.social-icons li:hover {
+    background: orange;
+    border-radius: 40%;
+    cursor:pointer;
+}
+

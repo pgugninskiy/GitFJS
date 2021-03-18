@@ -1,0 +1,207 @@
+/* селектор определяющиq общие характеристики объектов*/
+.propertyText {
+    font-family: Roboto;
+    font-style: normal;
+
+}
+
+#positionText {
+    text-align: center;
+
+}
+/*селекторы определяющие уникальные характеристики объектов*/
+.header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.logo {
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    overflow: hidden;
+}
+
+.abUs {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav.abUs a:hover {
+    background: orange;
+}
+
+
+
+.btnEnter {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 20px;
+    margin-top: 70px;
+    font-size: 20px;
+    cursor:pointer;
+
+}
+
+.btnEnter:hover {
+    background: gold;
+}
+
+.btnEnter:active {
+    background: rgb(13, 236, 252);
+}
+
+.abUsHead {
+    font-size: 64px;
+    line-height: 120%;
+}
+
+.abUsPar {
+    font-size: 24px;
+    line-height: 147.3%;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 200px;
+    margin-right: 200px;
+}
+
+.imgUs {
+    padding-top: 50px;
+    cursor:cell;
+}
+
+/*секция №2 контакты */
+
+.contactsBack {
+    background: #F7F9FB;
+    height: 341px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertikal {
+    border-left: 4px solid;
+    height: 30px;
+    background: #C8C8CF;
+}
+
+.contHead {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.sectionMail {
+    padding-right: 50px;
+}
+
+.headEMail {
+    font-size: 14px;
+    line-height: 147.3%;
+}
+
+.EMail {
+    font-size: 20px;
+    line-height: 147.3%;
+}
+
+.sectionPhone {
+    padding-left: 50px;
+}
+
+.headPhone {
+    font-size: 14px;
+    line-height: 147.3%;
+}
+
+.phone {
+    font-size: 20px;
+    line-height: 147.3%;
+}
+
+/* команда*/
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 66px;
+}
+
+.headTeam {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    border-radius: 58px;
+}
+
+.imgSign {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 147.3%;
+    cursor:cell;
+}
+
+.footer {
+    margin-top: 90px;
+    height: 124px;
+    left: 0px;
+    top: 2059px;
+    background: #3F3D56;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.social-icons {
+    border-radius: 50%;
+}
+
+.social-icons li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.social-icons li img {
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 18px;
+}
+
+ul.social-icons li:hover {
+    background: orange;
+    border-radius: 40%;
+    cursor:pointer;
+}
+

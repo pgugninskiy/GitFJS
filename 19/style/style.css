@@ -1,0 +1,418 @@
+/* селектор определяющиq общие характеристики объектов*/
+.propertyText {
+    font-family: Roboto;
+    font-style: normal;
+
+}
+
+#positionText {
+    text-align: center;
+
+}
+
+/*селекторы определяющие уникальные характеристики объектов*/
+.header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.logo {
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    overflow: hidden;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*выпадающее меню при изменении ширины экрана*/
+.adaptiveMenu {
+    display: none;
+}
+
+.topmenu {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topmenu:hover {
+    background: gold;
+}
+
+.topmenu>li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu>li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background: #d2d2d2;
+    top: 16px;
+    box-shadow: 4px -2px 0 #d2d2d2;
+    transform: rotate(30deg);
+}
+
+.topmenu>li:last-child:after {
+    background: none;
+    box-shadow: none;
+}
+
+.topmenu>li>a {
+    padding: 12px 26px;
+    color: #767676;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.topmenu li a:hover {
+    color: black;
+
+}
+
+.submenu {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 210px;
+    margin-left: -135px;
+    background: rgb(212, 252, 236);
+    border: 2px solid;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+    transition: .4s ease-in-out;
+}
+
+.submenu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef;
+    font-size: 16px;
+    color: #484848;
+    font-family: 'Kurale', serif;
+    list-style-type: none;
+}
+
+.topmenu>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/**/
+nav.menu a:hover {
+    background: orange;
+}
+
+
+
+.btnEnter {
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 8px;
+    transition: 0.5s;
+    padding: 20px;
+    margin-top: 70px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.btnEnter:hover {
+    background: gold;
+}
+
+.btnEnter:active {
+    background: rgb(13, 236, 252);
+}
+
+.abUsHead {
+    font-size: 64px;
+    line-height: 120%;
+}
+
+.abUsPar {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 147.3%;
+}
+
+.imgUs {
+    padding-top: 50px;
+    cursor: cell;
+}
+
+/*секция №2 контакты */
+
+.contactsBack {
+    background: #F7F9FB;
+    height: 341px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertikal {
+    border-left: 4px solid;
+    height: 30px;
+    background: #C8C8CF;
+}
+
+.contHead {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.sectionMail {
+    padding-right: 50px;
+}
+
+.headEMail {
+    font-size: 14px;
+    line-height: 147.3%;
+}
+
+.EMail {
+    font-size: 20px;
+    line-height: 147.3%;
+}
+
+.sectionPhone {
+    padding-left: 50px;
+}
+
+.headPhone {
+    font-size: 14px;
+    line-height: 147.3%;
+}
+
+.phone {
+    font-size: 20px;
+    line-height: 147.3%;
+}
+
+/* команда*/
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 66px;
+}
+
+.headTeam {
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    border-radius: 58px;
+}
+
+.imgSign {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 147.3%;
+    cursor: cell;
+}
+
+.footer {
+    margin-top: 90px;
+    height: 124px;
+    left: 0px;
+    top: 2059px;
+    background: #3F3D56;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+
+.social-icons {
+    border-radius: 50%;
+}
+
+.social-icons li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.social-icons li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 18px;
+}
+
+ul.social-icons li:hover {
+    background: orange;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+/*страница с FAQ*/
+
+.mainFAQ,
+.headFAQ,
+.expandingAnswers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headFAQ>h1 {
+    font-size: 64px;
+    line-height: 120%;
+}
+
+.expandingAnswers {
+    background: #F7F7F8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    max-width: 60%;
+}
+
+.expandingAnswers>summary {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 147.3%;
+    color: #1B1B1B;
+    position: relative;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.expandingAnswers[open]>summary {
+    background-color: rgba(97, 161, 153, 0.15);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 147.3%;
+    color: #61A199;
+
+}
+
+.expandingAnswers>p {
+    position: relative;
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 147.3%;
+    
+}
+
+.expandingAnswers>summary::-webkit-details-marker {
+    display: none;
+}
+
+.expandingAnswers summary:before {
+    color: #A0A7AD;
+    content: "▼";
+    padding: 15px;
+
+}
+
+.expandingAnswers[open]>summary:before {
+    content: "▲";
+    color: #61A199;
+    padding: 15px;
+
+}
+
+/*медиа запросы*/
+
+@media screen and (max-width: 1250px) {
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionPhone {
+        padding-left: 0px;
+    }
+
+    .sectionMail {
+        padding-right: 0px;
+    }
+
+    .contactsBack {
+
+        height: 400px;
+    }
+
+    .abUsPar {
+
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+
+    .btnEnter {
+        display: none;
+    }
+
+    .adaptiveMenu {
+        display: flex;
+    }
+}

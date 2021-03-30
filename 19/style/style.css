@@ -289,10 +289,16 @@ ul.social-icons li:hover {
 
 .mainFAQ,
 .headFAQ,
-.expandingAnswers {
+.answers,
+.content {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
+}
+
+.answers {
+    
 }
 
 .headFAQ>h1 {
@@ -300,62 +306,45 @@ ul.social-icons li:hover {
     line-height: 120%;
 }
 
-.expandingAnswers {
-    background: #F7F7F8;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-    max-width: 60%;
-}
-
-.expandingAnswers>summary {
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+.collapsible {
+    background-color: #F7F7F8;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+   
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 20px;
-    line-height: 147.3%;
-    color: #1B1B1B;
-    position: relative;
-    padding: 15px;
-    border-radius: 8px;
+    margin: 12px;
+
 }
 
-.expandingAnswers[open]>summary {
+.collapsible:after {
+    content: "\25B2";
+    font-size: 13px;
+    color: #61A199;
+    float: right;
+    margin-left: 5px;
+}
+
+.active,
+.collapsible:hover {
     background-color: rgba(97, 161, 153, 0.15);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 147.3%;
-    color: #61A199;
 
 }
 
-.expandingAnswers>p {
-    position: relative;
-    margin-left: 15px;
-    font-size: 20px;
-    line-height: 147.3%;
-    
+.active:after {
+    content: "\25BC";
 }
 
-.expandingAnswers>summary::-webkit-details-marker {
+.content {
+    padding: 10 18px;
     display: none;
-}
-
-.expandingAnswers summary:before {
-    color: #A0A7AD;
-    content: "▼";
+    overflow: hidden;
     padding: 15px;
-
-}
-
-.expandingAnswers[open]>summary:before {
-    content: "▲";
-    color: #61A199;
-    padding: 15px;
-
+    font-size: 20px;
+    
 }
 
 /*медиа запросы*/

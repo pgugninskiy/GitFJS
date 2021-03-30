@@ -289,16 +289,17 @@ ul.social-icons li:hover {
 
 .mainFAQ,
 .headFAQ,
-.answers,
-.content {
+.answers
+{
     display: flex;
     flex-direction: column;
-    
     align-items: center;
+    
 }
 
 .answers {
-    
+ 
+
 }
 
 .headFAQ>h1 {
@@ -311,7 +312,7 @@ ul.social-icons li:hover {
     color: #444;
     cursor: pointer;
     padding: 18px;
-   
+   width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -326,6 +327,7 @@ ul.social-icons li:hover {
     color: #61A199;
     float: right;
     margin-left: 5px;
+
 }
 
 .active,
